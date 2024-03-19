@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Your Travel Assistant</title>
   </head>
   <body>
     <!--Menu-->
-    <header>
-      <nav>
+    <header class="header">
+      <span class="hamburger">☰</span>
+      <nav class="menu">
         <ul>
           <li>About Us</li>
           <li>What We Do</li>
@@ -21,10 +28,16 @@
     </header>
 
     <!--Hero-->
-    <section><h1>Your Travel Assistant</h1></section>
+    <div class="hero">
+      <h1 class="headline1">
+        Your<br />
+        Travel<br />
+        Assistant<br />
+      </h1>
+    </div>
 
     <!--About Us-->
-    <section>
+    <section class="section-about-us">
       <div>
         <h2>About Us</h2>
         <p>
@@ -46,7 +59,7 @@
     </section>
 
     <!--What We Do-->
-    <section>
+    <section class="section-what-we-do">
       <div>
         <h2>What We Do</h2>
         <p>
@@ -61,26 +74,34 @@
           lower-impact walks and iconic treks you’ll love, too.
         </p>
       </div>
-      <div>
-        <img src="./icons/hiking-white.png" alt="Icon hiking" />
-        <p>Hiking</p>
-        <img src="./icons/cycle-white.png" alt="Icon cycling" />
-        <p>Cycling</p>
-        <img src="./icons/water-white.png" alt="Icon water" />
-        <p>Surfing</p>
-        <img src="./icons/car-white.png" alt="Icon car" />
-        <p>Car Trips</p>
+      <div class="icons">
+        <div>
+          <img src="./icons/hiking-white.png" alt="Icon hiking" />
+          <p>Hiking</p>
+        </div>
+        <div>
+          <img src="./icons/cycle-white.png" alt="Icon cycling" />
+          <p>Cycling</p>
+        </div>
+        <div>
+          <img src="./icons/water-white.png" alt="Icon water" />
+          <p>Surfing</p>
+        </div>
+        <div>
+          <img src="./icons/car-white.png" alt="Icon car" />
+          <p>Car Trips</p>
+        </div>
       </div>
     </section>
 
     <!--Our Trips Gallery-->
     <section>
-      <div>
+      <div class="gallery-grid">
         <img src="./images/gallery1.jpg" alt="Gallery 1" />
         <img src="./images/gallery2.jpg" alt="Gallery 2" />
         <img src="./images/gallery3.jpg" alt="Gallery 3" />
         <img src="./images/gallery4.jpg" alt="Gallery 4" />
-        <div><h2>Our Trips</h2></div>
+        <div class="gallery-headline"><h2>Our Trips</h2></div>
         <img src="./images/gallery5.jpg" alt="Gallery 5" />
         <img src="./images/gallery6.jpg" alt="Gallery 6" />
         <img src="./images/gallery7.jpg" alt="Gallery 7" />
@@ -89,8 +110,10 @@
     </section>
 
     <!--Where To Go-->
-    <section>
-      <div><h2>Where do you want to go?</h2></div>
+    <section class="section-where-to-go">
+      <div class="section-where-to-go-first-child">
+        <h2>Where do you want to go?</h2>
+      </div>
       <div>
         <p>
           You’ll find 21 detailed adventure guides, over a hundred practical
@@ -104,41 +127,45 @@
     </section>
 
     <!--Reviews-->
-    <section>
+    <section class="section-reviews">
       <div>
         <h2>Reviews</h2>
-        <p>
+        <p class="section-reviews-p">
           Our amazing clients are the reason we exist, and their reactions to
           our customized travel experiences and personalized service keep us
           smiling all day long. Here is just a sampling of what they’ve said:
         </p>
       </div>
-      <div>
-        <img src="./images/review1.jpg" alt="Review 1" />
-        <p>
-          She has booked two major European trips for us in the past year and
-          every aspect has met, and in most cases exceeded, our expectations.
-          Best prices, best hotels, best itineraries, and best cruises, she does
-          it all. But the most important thing is she remembers the little
-          things that we would do if we were making the plans ourselves.
-        </p>
-        <p>Bertie Norton</p>
-      </div>
-      <div>
-        <img src="./images/review2.jpg" alt="Review 2" />
-        <p>
-          Leigh McAdam has been making my travel arrangements for about 20 years
-          and there is no one else I would trust to arrange my trips and tours.
-          I've also had great fun on a few of the group trips she has arranged -
-          Peru & Machu Picchu and a 10-day cruise out of Venice and diving. It's
-          always an eclectic group of well traveled, interesting people.
-        </p>
-        <p>Frank KinneyFooter</p>
+      <div class="reviews-flexbox">
+        <div>
+          <img src="./images/review1.jpg" alt="Review 1" />
+          <p>
+            She has booked two major European trips for us in the past year and
+            every aspect has met, and in most cases exceeded, our expectations.
+            Best prices, best hotels, best itineraries, and best cruises, she
+            does it all. But the most important thing is she remembers the
+            little things that we would do if we were making the plans
+            ourselves.
+          </p>
+          <p><b>Bertie Norton</b></p>
+        </div>
+        <div>
+          <img src="./images/review2.jpg" alt="Review 2" />
+          <p>
+            Leigh McAdam has been making my travel arrangements for about 20
+            years and there is no one else I would trust to arrange my trips and
+            tours. I've also had great fun on a few of the group trips she has
+            arranged - Peru & Machu Picchu and a 10-day cruise out of Venice and
+            diving. It's always an eclectic group of well traveled, interesting
+            people.
+          </p>
+          <p><b>Frank Kinney</b></p>
+        </div>
       </div>
     </section>
 
     <!--Gallery-->
-    <section>
+    <section class="section-gallery">
       <img src="./images/pic1.jpg" alt="Picture 1" />
       <img src="./images/pic2.jpg" alt="Picture 2" />
       <img src="./images/pic3.jpg" alt="Picture 3" />
@@ -146,8 +173,8 @@
     </section>
 
     <!--Footer-->
-    <footer>
-      <p>Contact</p>
+    <footer class="footer">
+      <p class="contact">Contact</p>
       <p>© 2022 - Your Travel Assistant. All Rights Reserved.</p>
     </footer>
   </body>

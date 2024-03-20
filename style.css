@@ -30,7 +30,7 @@ body {
   height: 3em;
 }
 
-.menu {
+.menu ul {
   display: none;
 }
 
@@ -156,7 +156,7 @@ section {
 
   .section-about-us {
     display: flex;
-    gap: 1em;
+    gap: 2em;
   }
 
   .section-about-us div {
@@ -190,8 +190,7 @@ section {
     gap: 4em;
   }
 
-  .section-where-to-go h2,
-  .section-where-to-go p {
+  .section-where-to-go h2 {
     margin: 0;
   }
 
@@ -217,5 +216,41 @@ section {
   .section-gallery img {
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    margin: 0;
+    justify-content: center;
+    gap: 4em;
+    align-items: center;
+    height: 3em;
+  }
+
+  .headline1 {
+    font-size: 4em;
+    right: 2.2em;
+  }
+
+  section {
+    padding: 4em 10em;
+  }
+
+  .gallery-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews-flexbox {
+    gap: 8em;
   }
 }

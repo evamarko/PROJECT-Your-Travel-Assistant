@@ -17,6 +17,11 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -46,7 +51,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 3em);
   position: relative;
 }
 
@@ -64,8 +69,13 @@ section {
   padding: 3em 2em;
 }
 
-.section-about-us img {
-  margin-top: 1.5em;
+.about-us-img {
+  background-image: url("./images/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15em;
+  margin-top: 3em;
 }
 
 .section-what-we-do {
@@ -134,11 +144,12 @@ section {
 
 .contact {
   text-decoration: underline;
-  color: #efa69d;
+  color: var(--link-color);
 }
 
 .contact:hover {
-  color: #e9877b;
+  color: var(--hover-color);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -159,13 +170,12 @@ section {
     gap: 2em;
   }
 
-  .section-about-us div {
-    flex-basis: 50%;
+  .about-us-img {
+    height: auto;
   }
 
-  .section-about-us img {
-    height: 100%;
-    object-fit: cover;
+  .section-about-us div {
+    flex-basis: 50%;
   }
 
   .icons {
